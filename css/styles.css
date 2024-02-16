@@ -1,0 +1,110 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #f6f6f6;
+  color: #242422;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+p {
+  text-wrap: pretty;
+  max-width: 80ch;
+}
+
+.navbar-brand.hero-text {
+  img {
+    height: 26px;
+  }
+}
+
+button.navbar-toggler {
+  border: none;
+}
+
+section.container.hero {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.container {
+  display: flex;
+  flex-direction: column;
+  height: 90svh;
+  height: 90vh;
+
+  h2 {
+    color: #7d9ac2 !important;
+
+    &::after {
+      content: '';
+      display: block;
+      background-color: #7d9ac2;
+      height: 6px;
+      width: 6rem;
+      margin: 1rem 0 2rem;
+    }
+  }
+}
+
+.bi-chevron-down {
+  display: none;
+  margin-inline: auto;
+  height: 48px;
+  width: 48px;
+}
+
+.bi-arrow-right-square-fill {
+  cursor: pointer;
+  height: 64px;
+  width: 64px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  aspect-ratio: 1/1;
+}
+
+
+.btn-primary {
+  max-width: 24rem;
+}
+
+li.ms-3 a svg {
+  fill: #7d9ac2;
+  width: 32px;
+  height: auto;
+}
+
+
+@media only screen and (width > 768px) {
+  .card {
+    flex: 1 0 50%;
+  }
+}
+
+@media only screen and (width > 1024px) {
+  .card {
+    flex: 1 0 25%;
+  }
+
+  .bi-chevron-down {
+    display: block;
+  }
+}
